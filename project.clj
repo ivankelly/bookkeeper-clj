@@ -14,4 +14,5 @@
                   :classifier "tests"
                   :exclusions [[org.slf4j/slf4j-log4j12]]]
                  [junit/junit "4.12"]]
-  :aot [bookkeeper.mini-cluster])
+  :aot [bookkeeper.mini-cluster]
+  :deploy-repositories [["releases" :clojars]])
