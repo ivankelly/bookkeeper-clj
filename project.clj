@@ -1,4 +1,4 @@
-(defproject bookkeeper-clj "0.1.3"
+(defproject bookkeeper-clj "0.1.4-SNAPSHOT"
   :description "Clojure client for bookkeeper"
   :url "http://github.com/ivankelly/bookkeeper-clj"
   :license {:name "Apache License, Version 2.0"
