@@ -5,9 +5,9 @@
             :url "https://www.apache.org/licenses/LICENSE-2.0"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [manifold "0.1.6"]
-                 [org.apache.bookkeeper/bookkeeper-server "4.6.0"
+                 [org.apache.bookkeeper/bookkeeper-server "4.6.1"
                   :exclusions [[org.slf4j/slf4j-log4j12]]]
-                 [org.apache.bookkeeper/bookkeeper-server "4.6.0"
+                 [org.apache.bookkeeper/bookkeeper-server "4.6.1"
                   :classifier "tests"
                   :exclusions [[org.slf4j/slf4j-log4j12]]]
                  [org.apache.zookeeper/zookeeper "3.4.6"
