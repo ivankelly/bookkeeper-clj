@@ -5,8 +5,7 @@
             BookKeeper$DigestType BKException BKException$Code
             AsyncCallback$CreateCallback AsyncCallback$OpenCallback
             AsyncCallback$CloseCallback AsyncCallback$AddCallback
-            AsyncCallback$ReadCallback]
-           [org.apache.bookkeeper.conf ClientConfiguration]))
+            AsyncCallback$ReadCallback]))
 
 (def default-bookkeeper-opts {:zookeeper/connect "localhost"})
 
@@ -19,9 +18,7 @@
   "Initialize a bookkeeper client"
   [opts]
   (let [opts (merge default-bookkeeper-opts opts)]
-    (let [conf (doto (ClientConfiguration.)
-                 (.setZkServers (:zookeeper/connect opts)))]
-      (BookKeeper. conf))))
+    (BookKeeper. (:zookeeper/connect opts))))
 
 (defn close
   "Closes a bookkeeper client"
